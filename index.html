@@ -24,13 +24,13 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Lifestyle</a>
+            <a class="nav-link" href="#lifestyle">Lifestyle</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Frames</a>
+            <a class="nav-link" href="#frames">Frames</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Pricing</a>
@@ -41,14 +41,20 @@
   </header>
   <div class="main">
   <form action="https://www.freecodecamp.com/email-submit" id="form">
-    <h1>"My bike was my freedom."</h1>
+    <!-- This span fixes incorrect positioning resulting from fixed navbar -->
+    <span class="anchor" id="home"></span>
+    <h1 id="home" style="top:60px;">"My bike was my freedom."</h1>
     <input type="email" name="email" placeholder="Enter your email address" id="email">
     <br>
     <input type="submit" value="Join the Revolution" id="submit">
   </form>
+  <!-- This span fixes incorrect positioning resulting from fixed navbar -->
+  <span class="anchor" id="lifestyle"></span>
   <div class="videoWrapper">
     <iframe width="640" height="360" src="https://www.youtube.com/embed/oZjvDitm6eo?start=0&end=124" frameborder="0"  allowfullscreen id="video"></iframe>
   </div>
+  <!-- This span fixes incorrect positioning resulting from fixed navbar -->
+  <span class="anchor" id="frames"></span>
   <ul class="flex-container">
     <li class="flex-image">
       <!-- Evo frameset -->
@@ -99,7 +105,26 @@
       </div>
     </li>
   </ul>
-  
+  <li class="flex-table">
+    <div class="pricing">
+        <table>
+            <tr>
+              <th>Evo</th>
+              <td>$1,850</td>
+            </tr>
+            <tr>
+              <th>Coltello</th>
+              <td>$699.95</td>
+            </tr>
+            <tr>
+              <th>Evoluzione</th>
+              <td>$1,850</td>
+            </tr>
+          </table>
+    </div>
+    
+  </li>
+ 
 </div>
 
 </body>

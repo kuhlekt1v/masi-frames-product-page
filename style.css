@@ -10,6 +10,13 @@
   background-color: rgba(0, 0, 0, .2);
 }
 
+.anchor{
+  display: block;
+  height: 78px; /*same height as header*/
+  margin-top: -78px; /*same height as header*/
+  visibility: hidden;
+}
+
 /* Email submission form */
 #form {
   margin-top: 30px;
@@ -152,4 +159,33 @@ h3:hover {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+}
+
+/* Pricing table */
+.flex-table {
+  padding: 0;
+  margin-top: 100px;
+  list-style: none;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: left;
+  margin-left: 25px;
+  width: 800px;
+}
+th {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 2.5em;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 5px;
+  border: 10px solid white;
+}
+td {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.75em;
+  margin-left: 10px;
 }
