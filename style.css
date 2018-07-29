@@ -161,6 +161,7 @@ td {
   text-justify: inter-word;
   padding: 10px;
 }
+
 @media only screen and (max-width: 1250px) {
   .flex-table{
     max-width: 75%;
@@ -172,5 +173,19 @@ td {
   }
   td {
     font-size: 1.25em;
+  }
+}
+@media only screen and (max-width: 650px) {
+  #video{
+  display: block;
+  width: 320px;
+  height: 240px; 
+}
+@media only screen and (max-width: 450px) {
+  .frame-info {
+  max-width: 350px;
+  }
+  .frame-info img {
+  max-width: 350px;
   }
 }
